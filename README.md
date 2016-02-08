@@ -23,4 +23,4 @@ $message->debug('This is a debug message');
 
 $message->render();
 
-````php
+````
