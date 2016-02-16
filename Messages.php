@@ -20,7 +20,9 @@ class Messages {
 
     public function __construct() 
     {
-    
+        if (!isset($_SESSION['flash_messages'])) {
+            $_SESSION['flash_messages'] = array();
+        }
     }
 
     private function add($message, $type='error') 
